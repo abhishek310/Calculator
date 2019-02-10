@@ -29,20 +29,21 @@ class App extends Component {
         if (this.state.input == "") {
           this.setState({
             input: eval(this.state.output.slice(0, -1)),
-            output: this.state.output.slice(0, -1) +
-            v +
-            eval(this.state.output.slice(0, -1))
+            output:
+              this.state.output.slice(0, -1) +
+              v +
+              eval(this.state.output.slice(0, -1))
           });
-        }else{
-        this.setState({
-          input: eval(this.state.output + this.state.input),
-          output:
-            this.state.output +
-            this.state.input +
-            v +
-            eval(this.state.output + this.state.input)
-        });
-      }
+        } else {
+          this.setState({
+            input: eval(this.state.output + this.state.input),
+            output:
+              this.state.output +
+              this.state.input +
+              v +
+              eval(this.state.output + this.state.input)
+          });
+        }
       } else if (v == "AC") {
         this.setState({
           input: "",
@@ -76,10 +77,7 @@ class App extends Component {
       <div className="container-fluid">
         <Header />
         <div className="row">
-          <div
-            className="col-md-6 col-sm-6 col-xs-12 mr-auto ml-auto"
-            style={{ marginTop: "10rem" }}
-          >
+          <div className="col-8 mr-auto ml-auto" style={{ marginTop: "7em" }}>
             <div className="row">
               <Output output={this.state.output} />
               <Input input={this.state.input} />

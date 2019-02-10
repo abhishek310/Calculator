@@ -4,8 +4,12 @@ class Output extends Component {
   state = {};
   render() {
     return (
-      <div className="col-md-12">
-        <input className="form-control" value={this.props.output} style={{textAlign:'right'}} />
+      <div className="col-12">
+        <input
+          className="form-control"
+          value={this.props.output}
+          style={{ textAlign: "right" }}
+        />
       </div>
     );
   }
