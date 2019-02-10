@@ -9,7 +9,7 @@ class Header extends Component {
         style={{ backgroundColor: "#28a745" }}
       >
         <span />
-        <span className="navbar-brand mb-0 h1">CALCULATOR</span>
+        <span className="navbar-brand mb-0 h1 animated flip">CALCULATOR</span>
         <span />
       </nav>
     );
