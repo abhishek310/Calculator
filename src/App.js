@@ -22,7 +22,8 @@ class App extends Component {
           output: ""
         });
       } else {
-        this.setState({ input: this.state.input + v });
+        console.log(typeof this.state.input, this.state.input, typeof v, v);
+        this.setState({ input: this.state.input.toString() + v });
       }
     } else {
       if (v == "=") {
